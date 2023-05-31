@@ -23,11 +23,11 @@
             <br>
             <span class=" text-orange-600">Freshly</span> Delivered.
           </h1>
-          <div class=" w-96 text-white text-[15px] my-4"><p>Embrace the Essence of Nature's Bounty: Indulge in Our Exquisite Selection of Organically Grown, Handpicked with Care, and Swiftly Delivered Fresh Fruits and Vegetables</p></div>
+          <div class=" w-full text-white text-[15px] my-4"><p>Embrace the Essence of Nature's Bounty: Indulge in Our Exquisite Selection of Organically Grown, Handpicked with Care, and Swiftly Delivered Fresh Fruits and Vegetables</p></div>
           <button class=" btn my-8">Order Now</button>
         </div>
         <div>
-          <img src="~/assets/img/img-1.png" alt="hero" class=" w-[550px]">
+          <img src="~/assets/img/img-1.png" alt="hero" class=" hidden md:block w-[550px]">
         </div>
       </div>
       </div>
