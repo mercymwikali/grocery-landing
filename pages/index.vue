@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="container bg-white  p-10 rounded- shadow-inherit ">
+    <div class="container bg-white mt-4  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
         </h1>
@@ -90,8 +90,8 @@
       </div>
     </div>
     <!--Contact us-->
-    <div class=" w-full">
-      <footer class=" container bg-gradient-to-r from-orange-700 to-orange-600 text-white  p-10 mt-10 ">
+    <div class=" w-full mt-16">
+      <footer class=" container bg-gradient-to-r from-orange-700 to-orange-600 text-white  p-10">
         <div class="text-sm flex flex-col md:flex-row justify-around">
           <div class="w-full md:w-1/4 inline-block">
             <h1 class=" text-xl font-semibold">Havilah Pro Limited</h1>
