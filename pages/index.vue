@@ -39,14 +39,14 @@
         </div>
       </div>
     </div>
-    <div class="container bg-white mt-10 p-10 rounded- shadow-inherit ">
+    <div class="container bg-white  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
         </h1>
       </div>
       <div class=" flex flex-col md:flex-row p-5 items-center gap-6">
         <div class=" block rounded overflow-hidden shadow-slate-100 ">
-          <img src="~/assets/img/WhatsApp Image 2023-05-30 at 14.38.16.jpeg" class="  md:static">
+          <img src="~/assets/img/peas.jpeg" class=" md:static">
           <div class=" text-sm text-start font-light  items-center bg-slate-50 p-5">
             <p class=" flex py-2 tfont"><span class=" text-orange-600 font-semibold  pr-2">Title:</span> Peas Straight
               from the Farm</p>
@@ -75,9 +75,9 @@
       </div>
     </div>
     <!--About us-->
-    <div class=" container flex flex-col md:flex-row p-10 mt-10 w-full bg-gradient-to-r from-lime-900 to-lime-700">
+    <div class=" container flex flex-col md:flex-row p-10 m w-full bg-gradient-to-r from-lime-900 to-lime-700">
       <div class=" w-full md:w-1/2 font-semibold mt-20">
-        <h2 class=" text-white font-bold text-4xl">Why Customers<span class="  text-orange-600"> Love</span> Us.</h2>
+        <h2 class=" text-white font-bold text-5xl">Why Customers<span class="  text-orange-600"> Love</span> Us.</h2>
         <p class=" text-sm text-white font-light leading-normal my-4 ">Discover why customers love us! Enjoy the
           freshest, locally
           sourced produce delivered to your doorstep. Choose from a wide variety of organic options. Shop online and taste
@@ -85,13 +85,13 @@
       </div>
       <div class=" relative block my-4">
         <div class=" w-full md:w-[550px] rounded-md overflow-hidden">
-          <img src="~/assets/img/WhatsApp Image 2023-05-30 at 14.38.14.jpeg" alt="t" class=" static">
+          <img src="~/assets/img/choosing_pic.jpeg" alt="why choose use" class=" static">
         </div>
       </div>
     </div>
     <!--Contact us-->
     <div class=" w-full">
-      <footer class=" container bg-gradient-to-r from-orange-700 to-orange-600 text-white  p-10 mt-20 ">
+      <footer class=" container bg-gradient-to-r from-orange-700 to-orange-600 text-white  p-10 mt-10 ">
         <div class="text-sm flex flex-col md:flex-row justify-around">
           <div class="w-full md:w-1/4 inline-block">
             <h1 class=" text-xl font-semibold">Havilah Pro Limited</h1>
@@ -100,16 +100,16 @@
               based in Nairobi Kenya.<br><br>P.O Box 3516-00100 Nairobi, Kenya.
             </p>
           </div>
-          <div class=" inline-block cursor-pointer">
+          <div class=" inline-block cursor-pointer py-5 md:py-0">
             <h3 class=" text-base font-medium">Reach us Out on:</h3>
             <NuxtLink class=" flex items-center font-light gap-x-5 pt-3"><img
                 src="~/assets/img/instagram_924i0usa3u8h.svg" class="  w-[30px]">Instagram</NuxtLink>
             <NuxtLink class=" flex items-center font-light gap-x-5 pt-3"><img
-                src="~/assets/img/message_oe1gnatk1p2p (1).svg" class=" w-[30px]">Message Us</NuxtLink>
+                src="~/assets/img/message_icon.svg" class=" w-[30px]">Message Us</NuxtLink>
             <NuxtLink class=" flex items-center font-light gap-x-5 pt-3"><img
-                src="~/assets/img/facebook_f08wn8ifw301 (1).svg" class=" w-[30px]">Facebook</NuxtLink>
+                src="~/assets/img/facbook_icon.svg" class=" w-[30px]">Facebook</NuxtLink>
           </div>
-          <div class="w-full  md:w-1/4 inline-block">
+          <div class="w-full  md:w-1/4 inline-block py-5  md:py-0">
             <h3 class=" text-base font-medium">Customer Care:</h3>
             <p class="  font-light py-2">Our Customer service team is available to help during the following hours:</p>
             <p class=" flex text-center gap-x-5 py-2 font-light"><img src="~/assets/img/clock_upam93jzr9jz.svg"
