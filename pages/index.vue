@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class=" container relative px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen">
+    <div class=" container relative px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 sm:h-screen">
       <nav class="  flex items-center text-white justify-between cursor-pointer">
         <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink>
         <ul class="hidden w-full md:flex  hover:border-collapse ">
@@ -20,31 +20,34 @@
         </ul>
       </nav>
       <!--Hero section-->
-      <div class=" flex flex-col md:flex-row mt-20 gap-x-20 ">
-        <div class=" md:order-first md:w-1/2 md:pr-10 font-semibold   leading-normal">
+      <div class=" container w-full mt-20">
+      <div class=" w-full flex flex-col md:flex-row flex-grow-0 items-center">
+        <div class="w-full md:w-1/2  font-semibold leading-normal">
           <h3 class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</h3>
           <h1 class=" text-5xl font-bold text-white">Organically Grown,
             <br>
             <span class=" text-orange-600">Freshly</span> <span class=" font-light">Delivered.</span>
           </h1>
           <div class=" font-normal text-white text-[15px] py-5">
-            <p>Embrace the Essence of Nature's Bounty: Indulge in Our Exquisite Selection of Organically Grown, Handpicked
+            <p class=" font-light leading-normal">Embrace the Essence of Nature's Bounty: Indulge in Our Exquisite Selection of Organically Grown, Handpicked
               with Care, and Swiftly Delivered Fresh Fruits and Vegetables</p>
           </div>
           <button class=" btn font-medium my-8">Order Now</button>
         </div>
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 items-center">
           <img src="~/assets/img/fruits-7357732_1920-removebg-preview.png" alt="hero"
-            class="hidden md:block w-2/3 md:w-[680px] md:absolute bottom-0 right-12">
+            class="hidden md:block w-full md:w-auto absolute bottom-0 ">
         </div>
       </div>
     </div>
+    </div>
+    <!--browse our products-->
     <div class="container bg-white mt-4  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
         </h1>
       </div>
-      <div class=" flex flex-col md:flex-row p-5 items-center gap-6">
+      <div class=" flex shrink-0 flex-col md:flex-row p-5 gap-7 ">
         <div class=" block rounded overflow-hidden shadow-slate-100 ">
           <img src="~/assets/img/peas.jpeg" class=" md:static">
           <div class=" text-sm text-start font-light  items-center bg-slate-50 p-5">
@@ -75,12 +78,11 @@
       </div>
     </div>
     <!--About us-->
-    <div class=" container flex flex-col md:flex-row p-10 m w-full bg-gradient-to-r from-lime-900 to-lime-700">
+    <div class=" container flex flex-col md:flex-row p-10 bg-gradient-to-r from-lime-900 to-lime-700">
       <div class=" w-full md:w-1/2 font-semibold mt-20">
         <h2 class=" text-white font-bold text-5xl">Why Customers<span class="  text-orange-600"> Love</span> Us.</h2>
         <p class=" text-sm text-white font-light leading-normal my-4 ">Discover why customers love us! Enjoy the
-          freshest, locally
-          sourced produce delivered to your doorstep. Choose from a wide variety of organic options. Shop online and taste
+          freshest, locally sourced produce delivered to your doorstep. Choose from a wide variety of organic options. Shop online and taste
           the truly farm-fresh difference today!</p>
       </div>
       <div class=" relative block my-4">
@@ -105,7 +107,7 @@
             <NuxtLink class=" flex items-center font-light gap-x-5 pt-3"><img
                 src="~/assets/img/instagram_924i0usa3u8h.svg" class="  w-[30px]">Instagram</NuxtLink>
             <NuxtLink class=" flex items-center font-light gap-x-5 pt-3"><img
-                src="~/assets/img/message_icon.svg" class=" w-[30px]">Message Us</NuxtLink>
+                src="~/assets/img/message_eqvtlwtya476.svg" class=" w-[30px]">Message Us</NuxtLink>
             <NuxtLink class=" flex items-center font-light gap-x-5 pt-3"><img
                 src="~/assets/img/facbook_icon.svg" class=" w-[30px]">Facebook</NuxtLink>
           </div>
