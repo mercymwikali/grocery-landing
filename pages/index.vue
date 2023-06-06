@@ -1,14 +1,14 @@
 <template>
   <section>
-    <div class=" container relative px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 sm:h-screen">
-      <nav class="  flex items-center text-white justify-between cursor-pointer">
+    <div class="px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen   2xl:h-auto relative">
+      <nav class="  flex items-center justify-items-stretch text-white cursor-pointer">
         <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink>
         <ul class="hidden w-full md:flex  hover:border-collapse ">
           <li class=" block px-5 text-sm hover:text-orange-500 duration-200 hover:font-bold">
             <NuxtLink to="/" class=" px-2">Home</NuxtLink>
           </li>
           <li class=" block text-sm px-5 hover:text-orange-500 duration-150 hover:font-bold">
-            <NuxtLink to="/products" class=" ">Products</NuxtLink>
+            <NuxtLink to="#best-products" class=" px-2">Products</NuxtLink>
           </li>
           <li class=" block text-sm px-5 hover:text-orange-500 duration-200 hover:font-bold">
             <NuxtLink>Contact Us</NuxtLink>
@@ -20,9 +20,8 @@
         </ul>
       </nav>
       <!--Hero section-->
-      <div class=" container w-full mt-20">
-      <div class=" w-full flex flex-col md:flex-row flex-grow-0 items-center">
-        <div class="w-full md:w-1/2  font-semibold leading-normal">
+      <div class=" flex flex-col md:flex-row  items-center justify-items-center">
+        <div class=" md:w-1/2 font-semibold leading-normal py-20">
           <h3 class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</h3>
           <h1 class=" text-5xl font-bold text-white">Organically Grown,
             <br>
@@ -32,17 +31,18 @@
             <p class=" font-light leading-normal">Embrace the Essence of Nature's Bounty: Indulge in Our Exquisite Selection of Organically Grown, Handpicked
               with Care, and Swiftly Delivered Fresh Fruits and Vegetables</p>
           </div>
-          <button class=" btn font-medium my-8">Order Now</button>
+          <button class=" btn font-medium my-8">
+            <a href="https://wa.me/254708451590?text=Thank%20you%20for%20contacting%20us.%20Someone%20will%20get%20back%20to%20you%20shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
+          </button>
         </div>
-        <div class="md:w-1/2 items-center">
+        <div class=" hidden md:block  md:w-1/2 pt-10">
           <img src="~/assets/img/fruits-7357732_1920-removebg-preview.png" alt="hero"
-            class="hidden md:block w-full md:w-auto absolute bottom-0 ">
+            class="  md:absolute md:bottom-0  2xl:w-[650px] ">
         </div>
       </div>
     </div>
-    </div>
     <!--browse our products-->
-    <div class="container bg-white mt-4  p-10 rounded- shadow-inherit ">
+    <div id="best-products" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
         </h1>
@@ -78,7 +78,7 @@
       </div>
     </div>
     <!--About us-->
-    <div class=" container flex flex-col md:flex-row p-10 bg-gradient-to-r from-lime-900 to-lime-700">
+    <div class="  flex flex-col md:flex-row p-10 bg-gradient-to-r from-lime-900 to-lime-700">
       <div class=" w-full md:w-1/2 font-semibold mt-20">
         <h2 class=" text-white font-bold text-5xl">Why Customers<span class="  text-orange-600"> Love</span> Us.</h2>
         <p class=" text-sm text-white font-light leading-normal my-4 ">Discover why customers love us! Enjoy the
@@ -93,7 +93,7 @@
     </div>
     <!--Contact us-->
     <div class=" w-full mt-16">
-      <footer class=" container bg-gradient-to-r from-orange-700 to-orange-600 text-white  p-10">
+      <footer class="  bg-gradient-to-r from-orange-700 to-orange-600 text-white  p-10">
         <div class="text-sm flex flex-col md:flex-row justify-around">
           <div class="w-full md:w-1/4 inline-block">
             <h1 class=" text-xl font-semibold">Havilah Pro Limited</h1>

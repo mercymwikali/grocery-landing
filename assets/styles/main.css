@@ -13,4 +13,5 @@ body{
         @apply  hover:bg-white border-2 border-orange-600 hover:text-orange-600 duration-100 hover:font-semibold  cursor-pointer;
 
     }
+
 }
