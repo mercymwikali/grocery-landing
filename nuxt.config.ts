@@ -22,6 +22,9 @@ export default defineNuxtConfig({
         },
         { property: "og:image", content: "https://havilapro.com/img/logo.png" },
       ],
+      link: [
+          { rel: "canonical", href: "https://havilapro.com" },
+      ]
     },
   },
   modules: ["@nuxtjs/tailwindcss"],
