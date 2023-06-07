@@ -18,18 +18,21 @@
           </li>
         </ul>
       </nav>
-    <div class="px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen   2xl:h-auto relative">
+    <div class="flex items-center px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen relative">
       <!--Hero section-->
       <div class=" flex flex-col md:flex-row  items-center justify-items-center">
-        <div class=" md:w-1/2 font-semibold leading-normal py-20">
-          <h3 class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</h3>
-          <h1 class=" text-5xl font-bold text-white">Organically Grown,
-            <br>
-            <span class=" text-orange-600">Freshly</span> <span class=" font-light">Delivered.</span>
+        <div class=" md:w-1/2 font-semibold py-20">
+          <p class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</p>
+          <h1 class="text-6xl font-bold text-white leading-[4.5rem]">
+            <span>Organically Grown, </span>
+            <span class=" text-orange-600">Freshly</span> <span class="">Delivered.</span>
           </h1>
           <div class=" font-normal text-white text-[15px] py-5">
-            <p class=" font-light leading-normal">Embrace the Essence of Nature's Bounty: Indulge in Our Exquisite Selection of Organically Grown, Handpicked
-              with Care, and Swiftly Delivered Fresh Fruits and Vegetables</p>
+            <p class=" font-light leading-normal">
+              Experience the exquisite flavors of the earth with our globally exported fruits and vegetables. 
+              Each produce item harvested is hand-selected for its taste and nutritional value, ensuring that you get only the best from us.
+              We are bringing the farm closer to your family, no matter where you are in the world.
+            </p>
           </div>
           <button class=" btn font-medium my-8">
             <a href="https://wa.me/254748961296?text=Thank%20you%20for%20contacting%20us.%20Someone%20will%20get%20back%20to%20you%20shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
