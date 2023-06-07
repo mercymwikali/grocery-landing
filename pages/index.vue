@@ -1,20 +1,31 @@
 <template>
   <section>
     <nav class="flex absolute p-10 top-0 z-10 items-center justify-items-stretch text-white cursor-pointer">
-        <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink>
-        <ul class="hidden w-full md:flex  hover:border-collapse ">
-          <li class=" block px-5 text-sm hover:text-orange-500 duration-200">
+        <!-- <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink> -->
+        <NuxtLink to="/">
+          <img src="~/assets/img/logo.png" class="w-1/2 filter sepia" />
+        </NuxtLink>
+        <ul class="hidden w-full md:flex md:gap-8  hover:border-collapse ">
+          <li class="text-sm hover:text-orange-500 duration-200">
             <NuxtLink to="/" class=" px-2">Home</NuxtLink>
           </li>
-          <li class=" block text-sm px-5 hover:text-orange-500 duration-150">
+          <li class="text-sm hover:text-orange-500 duration-150">
             <NuxtLink to="#best-products" class=" px-2">Products</NuxtLink>
           </li>
-          <li class=" block text-sm px-5 hover:text-orange-500 duration-200">
-            <NuxtLink>Contact Us</NuxtLink>
-          </li>
-          <li class=" block text-sm  px-5">
-            <img src="~/assets/img/contact.svg" alt="Contact" class=" absolute  w-[18px] ">
-            <p class=" px-8">(+254) 748 961 296<span class=" px-4">(+254) 723 542 737</span></p>
+          <li class="text-sm flex gap-4">
+            <p>Contact Us</p>
+            <a class="tel flex gap-2 hover:text-orange-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+              </svg>
+              <p class="">(+254) 723 542 737</p>
+            </a>
+            <a class="email flex gap-2 hover:text-orange-500">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5">
+                <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+              </svg>
+              <p>havilahprolimited@gmail.com</p>
+            </a>
           </li>
         </ul>
       </nav>
