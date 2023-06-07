@@ -5,6 +5,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width; initial-scale=1",
       title: "Havilah Pro Limited - Exporters of Fresh Fruits and Vegetables",
       meta: [
+        { name: "theme-color", content: "#4D7C0F" },
         {
           name: "description",
           content:
@@ -22,9 +23,7 @@ export default defineNuxtConfig({
         },
         { property: "og:image", content: "https://havilapro.com/img/logo.png" },
       ],
-      link: [
-          { rel: "canonical", href: "https://havilapro.com" },
-      ]
+      link: [{ rel: "canonical", href: "https://havilapro.com" }],
     },
   },
   modules: ["@nuxtjs/tailwindcss"],
