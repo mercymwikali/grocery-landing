@@ -9,8 +9,8 @@ body{
 
 @layer components {
     .btn {
-        @apply  bg-orange-600 px-4 py-2 text-white w-3/4 text-sm font-semibold;
-        @apply  hover:bg-white border-2 border-orange-600 hover:text-orange-600 duration-100 hover:font-semibold  cursor-pointer;
+        @apply  bg-orange-600 border-2 border-orange-600 px-4 py-2 text-gray-100 font-normal w-full md:w-3/4 text-sm;
+        @apply  hover:bg-transparent hover:text-orange-600 duration-100;
 
     }
 

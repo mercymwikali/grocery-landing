@@ -34,9 +34,7 @@
               We are bringing the farm closer to your family, no matter where you are in the world.
             </p>
           </div>
-          <button class=" btn font-medium my-8">
-            <a href="https://wa.me/254748961296?text=Thank%20you%20for%20contacting%20us.%20Someone%20will%20get%20back%20to%20you%20shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
-          </button>
+          <a class="inline-block btn text-center my-4" href="https://wa.me/254748961296?text=Thank%20you%20for%20contacting%20us.%20Someone%20will%20get%20back%20to%20you%20shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
         <div class=" hidden md:block  md:w-1/2 pt-10">
           <img src="~/assets/img/fruits-7357732_1920-removebg-preview.png" alt="hero"
