@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Montserrat', sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 @layer components {
-    .btn {
-        @apply  bg-orange-600 border-2 border-orange-600 px-4 py-2 text-gray-100 font-normal w-full md:w-3/4 text-sm;
-        @apply  hover:bg-transparent hover:text-orange-600 duration-100;
-
-    }
-
+  .btn {
+    @apply bg-orange-600 border-2 border-orange-600 px-20 py-4 text-gray-100 font-normal w-full md:w-3/4 text-sm;
+    @apply hover:bg-transparent hover:text-orange-600 duration-100;
+  }
 }
