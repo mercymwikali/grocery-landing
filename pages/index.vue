@@ -18,10 +18,10 @@
           </li>
         </ul>
       </nav>
-    <div class="flex items-center px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen relative">
+    <div class="flex items-center w-full p-8 bg-gradient-to-r from-lime-950 to-lime-700 h-screen relative">
       <!--Hero section-->
-      <div class=" flex flex-col md:flex-row  items-center justify-items-center">
-        <div class=" md:w-1/2 font-semibold py-20">
+      <div class=" flex flex-col md:flex-row items-center justify-items-center">
+        <div class="md:w-1/2 font-semibold py-20">
           <p class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</p>
           <h1 class="text-6xl font-bold text-white leading-[4.5rem]">
             <span>Organically Grown, </span>
@@ -29,16 +29,13 @@
           </h1>
           <div class=" font-normal text-white text-[15px] py-5">
             <p class=" font-light leading-normal">
-              Experience the exquisite flavors of the earth with our globally exported fruits and vegetables. 
-              Each produce item harvested is hand-selected for its taste and nutritional value, ensuring that you get only the best from us.
-              We are bringing the farm closer to your family, no matter where you are in the world.
+              We are dedicated to promoting healthy living worldwide through our export of fresh, nutrient-rich fruits and vegetables. We source our produce from trusted farms that use sustainable farming methods. Allow us to be your gateway to a healthier lifestyle, no matter where you are in the world.
             </p>
           </div>
           <a class="inline-block btn text-center my-4" href="https://wa.me/254748961296?text=Thank%20you%20for%20contacting%20us.%20Someone%20will%20get%20back%20to%20you%20shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
         </div>
         <div class=" hidden md:block  md:w-1/2 pt-10">
-          <img src="~/assets/img/fruits-7357732_1920-removebg-preview.png" alt="hero"
-            class="  md:absolute md:bottom-0  2xl:w-[650px] ">
+          <img src="~/assets/img/avocado.png" alt="Avocado" srcset="" class="w-full h-full">
         </div>
       </div>
     </div>
