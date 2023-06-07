@@ -1,16 +1,15 @@
 <template>
   <section>
-    <div class="px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen   2xl:h-auto relative">
-      <nav class="  flex items-center justify-items-stretch text-white cursor-pointer">
+    <nav class="flex absolute p-10 top-0 z-10 items-center justify-items-stretch text-white cursor-pointer">
         <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink>
         <ul class="hidden w-full md:flex  hover:border-collapse ">
-          <li class=" block px-5 text-sm hover:text-orange-500 duration-200 hover:font-bold">
+          <li class=" block px-5 text-sm hover:text-orange-500 duration-200">
             <NuxtLink to="/" class=" px-2">Home</NuxtLink>
           </li>
-          <li class=" block text-sm px-5 hover:text-orange-500 duration-150 hover:font-bold">
+          <li class=" block text-sm px-5 hover:text-orange-500 duration-150">
             <NuxtLink to="#best-products" class=" px-2">Products</NuxtLink>
           </li>
-          <li class=" block text-sm px-5 hover:text-orange-500 duration-200 hover:font-bold">
+          <li class=" block text-sm px-5 hover:text-orange-500 duration-200">
             <NuxtLink>Contact Us</NuxtLink>
           </li>
           <li class=" block text-sm  px-5">
@@ -19,6 +18,7 @@
           </li>
         </ul>
       </nav>
+    <div class="px-10 py-5 bg-gradient-to-r from-lime-950 to-lime-700 h-screen   2xl:h-auto relative">
       <!--Hero section-->
       <div class=" flex flex-col md:flex-row  items-center justify-items-center">
         <div class=" md:w-1/2 font-semibold leading-normal py-20">
