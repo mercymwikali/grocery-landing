@@ -1,3 +1,14 @@
+<script setup>
+const { isMobile, isDesktop, $device } = useDevice()
+  const products = ref([{
+    name: '',
+    price: 120,
+    description: '',
+    image: '',
+  }]);
+  console.log('are we on desktop', isDesktop);  
+
+</script>
 <template>
   <section>
     <nav class="flex absolute p-6 md:px-16 top-0 z-10 items-center justify-items-stretch text-white cursor-pointer">
@@ -5,7 +16,7 @@
         <NuxtLink to="/">
           <img src="~/assets/img/logo.png" class="w-1/2 filter sepia" />
         </NuxtLink>
-        <ul class="hidden w-full md:flex md:gap-8  hover:border-collapse ">
+        <ul class="hidden w-full md:flex md:gap-8  hover:border-collapse" v-if="!isMobile">
           <li class="text-sm hover:text-orange-500 duration-200">
             <NuxtLink to="/" class=" px-2">Home</NuxtLink>
           </li>
@@ -30,22 +41,27 @@
       </nav>
     <div class="flex items-center w-full p-4 md:px-16 bg-gradient-to-r from-lime-950 to-lime-700 h-screen relative">
       <!--Hero section-->
-      <div class=" flex flex-col md:flex-row items-center justify-items-center">
-        <div class="md:w-1/2 font-semibold py-20">
-          <p class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</p>
-          <h1 class="text-5xl md:text-6xl font-bold text-white leading-[4.5rem]">
-            <span>Organically Grown,</span>
-            <span class=" text-orange-600">Freshly</span> <span class="">Delivered.</span>
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="w-full md:w-1/2 font-semibold z-10">
+          <h1 class="md:text-[4.25rem] md:leading-[4.5rem] text-[2.25rem] font-bold text-white leading-[2.5rem]">
+            Leading <span class="text-orange-600">Exporter</span>,
+            Fruits and Vegeta<span class="text-orange-600">bles</span>
           </h1>
-          <div class=" font-normal text-white text-[15px] py-5">
+          <div class=" font-normal flex flex-col gap-4 text-white py-5">
             <p class=" font-light leading-normal">
-              We are dedicated to promoting healthy living worldwide through our export of fresh, nutrient-rich fruits and vegetables. We source our produce from trusted farms that use sustainable farming methods. Allow us to be your gateway to a healthier lifestyle, no matter where you are in the world.
+              With a commitment to quality, reliability, and customer satisfaction, we have established ourselves as a trusted source for premium agricultural products.
+            </p>
+            <p>
+              We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
             </p>
           </div>
-          <a class="inline-block btn text-center my-4" href="https://wa.me/254723542737?text=Thank%20you%20for%20contacting%20us.%20We are your number one exporter of fine beans, sugar snap, snow peas and Avocado. Feel free to leave a message, a representative will reach out to you shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
+          <div class="flex gap-2 items-center my-4" :class="{'flex-col gap-4': isMobile}">
+            <a class="flex-1 btn text-center" href="https://wa.me/254723542737?text=Thank%20you%20for%20contacting%20us.%20We are your number one exporter of fine beans, sugar snap, snow peas and Avocado. Feel free to leave a message, a representative will reach out to you shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
+            <a class="flex-1 px-20 py-4 text-orange-600 underline underline-offset-4" href="#who-we-are">Who We Are</a>
+          </div>
         </div>
-        <div class="hidden md:block md:w-1/2 pt-10">
-          <img src="~/assets/img/avocado.png" alt="Avocado" srcset="" class="w-full h-full">
+        <div class="md:block md:w-1/2 pt-10" :class="{'absolute top-40 right-2 w-[400px] opacity-50': isMobile}">
+          <img src="~/assets/img/hero-image.png" alt="Avocado" srcset="" class="w-full h-full">
         </div>
       </div>
     </div>
@@ -160,9 +176,5 @@
     </div>
   </section>
 </template>
-<script setup>
-
-
-</script>
 
 <style  scoped></style>
