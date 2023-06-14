@@ -26,6 +26,6 @@ export default defineNuxtConfig({
       link: [{ rel: "canonical", href: "https://havilapro.com" }],
     },
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/device"],
   css: ["~/assets/styles/main.css"],
 });
