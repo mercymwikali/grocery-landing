@@ -10,7 +10,7 @@ const { isMobile, isDesktop, $device } = useDevice()
 
 </script>
 <template>
-  <section>
+  <section class="overflow-hidden bg-gradient-to-r from-lime-950 to-lime-700">
     <nav class="flex absolute p-6 md:px-16 top-0 z-10 items-center justify-items-stretch text-white cursor-pointer">
         <!-- <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink> -->
         <NuxtLink to="/">
@@ -38,8 +38,8 @@ const { isMobile, isDesktop, $device } = useDevice()
             </a>
           </li>
         </ul>
-      </nav>
-    <div class="flex items-center w-full p-4 md:px-16 bg-gradient-to-r from-lime-950 to-lime-700 h-screen relative">
+    </nav>
+    <div class="flex items-center w-full p-4 md:px-16  h-screen relative">
       <!--Hero section-->
       <div class="flex flex-col md:flex-row items-center justify-center">
         <div class="w-full md:w-1/2 font-semibold z-10">
@@ -66,18 +66,17 @@ const { isMobile, isDesktop, $device } = useDevice()
       </div>
     </div>
     <!--browse our products-->
-    <div id="who-we-are" class="h-screen flex items-center">
-      <div class="p-4 md:px-16">
+    <div id="who-we-are" class="h-screen flex items-center text-gray-200 relative">
+      <img src="~/assets/img/fine-beans.png" class="w-1/2 rotate-[12.5deg] absolute -top-40 -left-60" alt="Fine Beans" srcset="">
+      <img src="~/assets/img/baby-corn.png" alt="Baby Corn" class="w-1/3 absolute -top-40 left-[50%]" />
+      <img src="~/assets/img/mangoes.png" class="w-1/3 absolute bottom-0 right-0" alt="Ripe mangoes" srcset="" />
+      <div class="w-full md:w-2/3 absolute top-80 p-4 md:px-16">
         <div class="flex flex-col md:flex-row md:items-center">
-          <img src="~/assets/img/mango_bg.png" class="w-1/2" alt="Ripe mangoes" srcset="">
           <div class="company-descripton">
-            <h1 class="text-4xl md:text-6xl font-bold py-6">Who we are</h1>
+            <h1 class="text-4xl md:text-6xl font-bold py-6">Who <span class="text-orange-600">we are</span></h1>
             <p class="inline-block my-4">
-            We are an international exporter of premium-quality fruits and vegetables, committed to nourishing the world with the best of nature's bounty. Founded on the principles of health, freshness, and sustainability, we serve as a vital link between farmers' fields and global tables.
-              </p>
-              <p>
-                But we're not just about delivering produce; we're about building relationships and fostering a global community. We work closely with farmers, supporting sustainable farming practices and fair trade. We believe in the power of fresh produce to connect people, and we're driven to make that connection possible, one fruit and one vegetable at a time.
-              </p>
+              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. As farmers,We cultivate and grow a variety of high-quality produce, ensuring that it meets international standards and regulations for export.Our company plays a vital role in connecting farmers like Ourselves with buyers from around the world, enabling the global distribution of fresh fruits and vegetables and promoting the agricultural industry in Kenya.
+            </p>
               <a href="#best-products" class="inline-block text-center text-orange-500 w-full md:w-1/2 my-8 px-20 py-4 border border-orange-500">View Our Catalog</a>
           </div>
         </div>
