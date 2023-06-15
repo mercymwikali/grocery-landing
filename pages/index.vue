@@ -4,42 +4,42 @@ const { isMobile, isDesktop, $device } = useDevice()
     {
       name: 'Fine Beans',
       description: 'Savor the delicate, yet distinct flavor of our fine beans. Freshly plucked and meticulously checked for quality, these slender and tender beans hold a crisp texture and a vibrant green hue. They make a versatile addition to any dish, bringing a pop of color and a dash of wholesome nutrients. Whether you choose to steam them, sauté, or enjoy them in a salad, our fine beans are guaranteed to elevate your culinary experience.',
-      image: '/_nuxt/assets/img/fine-beans.png',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841956/fine-beans_mvjryp.png',
     },
     {
       name: 'Snow Peas',
       description: 'Fresh, green, and bursting with a sweet earthy flavor, our peas are a vibrant addition to any plate. Handpicked for their plumpness and bright color, these peas serve as a testament to the rich, fertile soils from which they are harvested. A great source of vitamins and minerals, they are as nutritious as they are delicious',
-      image: '/_nuxt/assets/img/snow-peas.png'
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/snow-peas_xd6hvv.png'
     },
     {
       name: 'Sugar Snap Peas',
       description: 'Experience the sweet crunch of our freshly harvested sugar snap peas. Perfectly plump with bright green pods, these peas are known for their delightful sweet flavor and crisp texture. Enjoy them raw, lightly steamed, or stir-fried for a nutritious addition to your meals. Their edible pods are not only tasty but also packed with a bounty of vitamins and fiber, making our sugar snap peas a delicious and healthy choice.',
-      image: '/_nuxt/assets/img/snow-peas.png',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/snow-peas_xd6hvv.png',
     },
     {
       name: 'Baby Corn',
       description: 'Our baby corn is a testament to our commitment to quality and freshness. Picked young and tender, these petite ears are a versatile ingredient beloved in numerous cuisines around the world. Enjoy their delicate sweetness and satisfying crunch in stir-fries, salads, or as a nutritious snack.',
-      image: '/_nuxt/assets/img/baby-corn.png'
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841953/baby-corn_jtinnm.png'
     },
     {
       name: 'Avocado',
       description: 'Enjoy the creamy goodness of our rich and buttery avocados, a true superfood. We harvest our avocados at the optimal moment to ensure their smooth texture and subtly nutty flavor. Perfect in salads, on toast, or as guacamole, our avocados are a deliciously wholesome choice for your table.',
-      image: '/_nuxt/assets/img/avocado-new.png',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841949/avocado-new_swya7u.png',
     },
     {
       name: 'Mangoes',
       description: 'Delve into a world of tropical delight with our sun-kissed mangoes, harvested at the perfect moment of ripeness to ensure a succulent and sweet experience. Each mango promises a refreshing taste that captures the essence of warm, sunny climates, a joy to eat on their own or used in a variety of culinary creations.', 
-      image: '/_nuxt/assets/img/mangoes.png'
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/mangoes_jtl39w.png'
     },
     {
       name: 'Broccoli',
       description: 'We take pride in our firm, deep green broccoli, harvested at the peak of freshness to ensure its unique flavor and nutritional value. The florets are tightly packed and abundant, signifying their top-grade quality. Each stalk of our broccoli is a powerhouse of nutrients, ready to make your meals healthier and tastier.', 
-      image: '/_nuxt/assets/img/broccoli.png',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841951/broccoli_qgyxu5.png',
     },
     {
       name: 'Baby Carrots',
       description: 'Crunch into health with our sweet and tender baby carrots. These brightly colored delights are harvested young, preserving their natural sweetness and making them a favorite among kids and adults alike. Snack on them raw, toss them in salads, or roast them for a healthy and tasty treat.',
-      image: '/_nuxt/assets/img/baby-carrot.png'
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841951/baby-carrot_llwlqr.png'
     }
 ]);
   console.log('are we on desktop', isDesktop);  
@@ -50,7 +50,7 @@ const { isMobile, isDesktop, $device } = useDevice()
     <nav class="flex absolute p-6 md:px-16 top-0 z-10 items-center justify-items-stretch text-white cursor-pointer">
         <!-- <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink> -->
         <NuxtLink to="/">
-          <img src="~/assets/img/logo.png" class="w-1/2 filter sepia" />
+          <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841952/logo_fwck24.png" class="w-1/2 filter sepia" />
         </NuxtLink>
         <ul class="hidden w-full md:flex md:gap-8  hover:border-collapse" v-if="!isMobile">
           <li class="text-sm hover:text-orange-500 duration-200">
@@ -97,7 +97,7 @@ const { isMobile, isDesktop, $device } = useDevice()
           </div>
         </div>
         <div class="md:block md:w-1/2 pt-10" :class="{'absolute top-40 right-2 w-[400px] opacity-50': isMobile}">
-          <img src="~/assets/img/hero-image.png" alt="Avocado" srcset="" class="w-full h-full">
+          <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841725/hero-image_lepcyi.png" alt="Avocado" srcset="" class="w-full h-full">
         </div>
       </div>
     </div>
