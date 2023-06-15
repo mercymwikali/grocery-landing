@@ -1,11 +1,47 @@
 <script setup>
 const { isMobile, isDesktop, $device } = useDevice()
-  const products = ref([{
-    name: '',
-    price: 120,
-    description: '',
-    image: '',
-  }]);
+  const products = ref([
+    {
+      name: 'Fine Beans',
+      description: 'Savor the delicate, yet distinct flavor of our fine beans. Freshly plucked and meticulously checked for quality, these slender and tender beans hold a crisp texture and a vibrant green hue. They make a versatile addition to any dish, bringing a pop of color and a dash of wholesome nutrients. Whether you choose to steam them, sauté, or enjoy them in a salad, our fine beans are guaranteed to elevate your culinary experience.',
+      image: '/_nuxt/assets/img/fine-beans.png',
+    },
+    {
+      name: 'Snow Peas',
+      description: 'Fresh, green, and bursting with a sweet earthy flavor, our peas are a vibrant addition to any plate. Handpicked for their plumpness and bright color, these peas serve as a testament to the rich, fertile soils from which they are harvested. A great source of vitamins and minerals, they are as nutritious as they are delicious',
+      image: '/_nuxt/assets/img/snow-peas.png'
+    },
+    {
+      name: 'Sugar Snap Peas',
+      description: 'Experience the sweet crunch of our freshly harvested sugar snap peas. Perfectly plump with bright green pods, these peas are known for their delightful sweet flavor and crisp texture. Enjoy them raw, lightly steamed, or stir-fried for a nutritious addition to your meals. Their edible pods are not only tasty but also packed with a bounty of vitamins and fiber, making our sugar snap peas a delicious and healthy choice.',
+      image: '/_nuxt/assets/img/snow-peas.png',
+    },
+    {
+      name: 'Baby Corn',
+      description: 'Our baby corn is a testament to our commitment to quality and freshness. Picked young and tender, these petite ears are a versatile ingredient beloved in numerous cuisines around the world. Enjoy their delicate sweetness and satisfying crunch in stir-fries, salads, or as a nutritious snack.',
+      image: '/_nuxt/assets/img/baby-corn.png'
+    },
+    {
+      name: 'Avocado',
+      description: 'Enjoy the creamy goodness of our rich and buttery avocados, a true superfood. We harvest our avocados at the optimal moment to ensure their smooth texture and subtly nutty flavor. Perfect in salads, on toast, or as guacamole, our avocados are a deliciously wholesome choice for your table.',
+      image: '/_nuxt/assets/img/avocado-new.png',
+    },
+    {
+      name: 'Mangoes',
+      description: 'Delve into a world of tropical delight with our sun-kissed mangoes, harvested at the perfect moment of ripeness to ensure a succulent and sweet experience. Each mango promises a refreshing taste that captures the essence of warm, sunny climates, a joy to eat on their own or used in a variety of culinary creations.', 
+      image: '/_nuxt/assets/img/mangoes.png'
+    },
+    {
+      name: 'Broccoli',
+      description: 'We take pride in our firm, deep green broccoli, harvested at the peak of freshness to ensure its unique flavor and nutritional value. The florets are tightly packed and abundant, signifying their top-grade quality. Each stalk of our broccoli is a powerhouse of nutrients, ready to make your meals healthier and tastier.', 
+      image: '/_nuxt/assets/img/broccoli.png',
+    },
+    {
+      name: 'Baby Carrots',
+      description: 'Crunch into health with our sweet and tender baby carrots. These brightly colored delights are harvested young, preserving their natural sweetness and making them a favorite among kids and adults alike. Snack on them raw, toss them in salads, or roast them for a healthy and tasty treat.',
+      image: '/_nuxt/assets/img/baby-carrot.png'
+    }
+]);
   console.log('are we on desktop', isDesktop);  
 
 </script>
@@ -83,7 +119,20 @@ const { isMobile, isDesktop, $device } = useDevice()
     </div>
 
     <!-- Products -->
-    <div id="best-products" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
+    <div class="products py-10 min-h-screen md:px-[4rem]" id="best-products">
+      <div class="p-4">
+        <h1 class="text-[54px] md:my-10 md:text-[128px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">Top Products</h1>
+        <div class="products-list grid gap-10 md:grid-cols-3 text-gray-200">
+          <div class="product-item border border-gray-500 p-4" v-for="product of products">
+            <img class="w-80" :src="product.image" :alt="product.name" srcset="">
+            <h3 class="text-3xl my-2">{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="best-products-d" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
         </h1>
