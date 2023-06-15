@@ -122,11 +122,13 @@ const { isMobile, isDesktop, $device } = useDevice()
     <div class="products py-10 min-h-screen md:px-[4rem]" id="best-products">
       <div class="p-4">
         <h1 class="text-[54px] md:my-10 md:text-[128px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">Top Products</h1>
-        <div class="products-list grid gap-10 md:grid-cols-3 text-gray-200">
-          <div class="product-item border border-gray-500 p-4" v-for="product of products">
-            <img class="w-80" :src="product.image" :alt="product.name" srcset="">
-            <h3 class="text-3xl my-2">{{ product.name }}</h3>
-            <p>{{ product.description }}</p>
+        <div class="w-full md:w-3/4 products-list grid gap-10 md:grid-cols-3 text-gray-200">
+          <div :class="{'border border-orange-600': index % 2 == 0}" class="hover:shadow-xl transition-shadow cursor-pointer product-item border text-center border-gray-500 p-4" v-for="(product, index) of products">
+            <img class="h-40 inline-block text-center" :src="product.image" :alt="product.name" srcset="">
+            <div class="content text-left">
+              <h3 class="font-semibold text-xl my-2">{{ product.name }}</h3>
+              <p class="text-sm">{{ product.description }}</p>
+            </div>
           </div>
         </div>
       </div>
