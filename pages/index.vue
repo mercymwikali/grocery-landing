@@ -39,7 +39,7 @@ const { isMobile, isDesktop, $device } = useDevice()
           </li>
         </ul>
     </nav>
-    <div class="flex items-center w-full p-4 md:px-16  h-screen relative">
+    <div class="flex items-center w-full p-4 md:px-16 h-screen relative">
       <!--Hero section-->
       <div class="flex flex-col md:flex-row items-center justify-center">
         <div class="w-full md:w-1/2 font-semibold z-10">
@@ -55,7 +55,7 @@ const { isMobile, isDesktop, $device } = useDevice()
               We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
             </p>
           </div>
-          <div class="flex gap-2 items-center my-4" :class="{'flex-col gap-4': isMobile}">
+          <div class="flex md:gap-2 items-center my-4" :class="{'flex-col gap-10': isMobile}">
             <a class="flex-1 btn text-center" href="https://wa.me/254723542737?text=Thank%20you%20for%20contacting%20us.%20We are your number one exporter of fine beans, sugar snap, snow peas and Avocado. Feel free to leave a message, a representative will reach out to you shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
             <a class="flex-1 px-20 py-4 text-orange-600 underline underline-offset-4" href="#who-we-are">Who We Are</a>
           </div>
@@ -65,23 +65,24 @@ const { isMobile, isDesktop, $device } = useDevice()
         </div>
       </div>
     </div>
-    <!--browse our products-->
-    <div id="who-we-are" class="h-screen flex items-center text-gray-200 relative">
-      <img src="~/assets/img/fine-beans.png" class="w-1/2 rotate-[12.5deg] absolute -top-40 -left-60" alt="Fine Beans" srcset="">
-      <img src="~/assets/img/baby-corn.png" alt="Baby Corn" class="w-1/3 absolute -top-40 left-[50%]" />
-      <img src="~/assets/img/mangoes.png" class="w-1/3 absolute bottom-0 right-0" alt="Ripe mangoes" srcset="" />
-      <div class="w-full md:w-2/3 absolute top-80 p-4 md:px-16">
-        <div class="flex flex-col md:flex-row md:items-center">
-          <div class="company-descripton">
-            <h1 class="text-4xl md:text-6xl font-bold py-6">Who <span class="text-orange-600">we are</span></h1>
+
+    <!--Who we are-->
+    <div id="who-we-are" class="min-h-screen md:h-screen flex items-center py-10 text-gray-200 md:px-[4rem]">
+     <div class="w-full p-4 md:w-4/5">
+      <h1 class="text-[54px] md:my-10 md:text-[128px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">Who We Are</h1>
+        <div class="md:border md:border-gray-500 relative md:p-[4rem]">
+          <div class="company-descripton w-full md:w-3/4">
             <p class="inline-block my-4">
               We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. As farmers,We cultivate and grow a variety of high-quality produce, ensuring that it meets international standards and regulations for export.Our company plays a vital role in connecting farmers like Ourselves with buyers from around the world, enabling the global distribution of fresh fruits and vegetables and promoting the agricultural industry in Kenya.
             </p>
-              <a href="#best-products" class="inline-block text-center text-orange-500 w-full md:w-1/2 my-8 px-20 py-4 border border-orange-500">View Our Catalog</a>
+            <p>With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. Our team is well-versed in export regulations, documentation, and shipping procedures, enabling us to handle the complexities of international trade seamlessly. Whether you're a retailer, distributor, or food service provider, we are equipped to meet your specific requirements and deliver on time.</p>
           </div>
+          <a href="#best-products" :class="{'my-10': isMobile}" class="w-full md:w-1/3 inline-block md:absolute md:top-[50%] md:-right-40 text-center text-orange-500 px-20 py-4 border border-orange-500">View Our Catalog</a>
         </div>
       </div>
     </div>
+
+    <!-- Products -->
     <div id="best-products" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
