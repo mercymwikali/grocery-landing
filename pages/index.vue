@@ -188,7 +188,7 @@ const { isMobile, isDesktop, $device } = useDevice()
       <footer class="bg-gradient-to-r from-orange-700 to-orange-600 text-white p-6 md:px-16">
         <div class="text-sm flex flex-col md:flex-row md:gap-48">
           <div class="w-full md:w-1/4 inline-block">
-            <img src="~/assets/img/logo.png" class="w-1/2 mb-2" alt="Havilah Pro" srcset="">
+            <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841952/logo_fwck24.png" class="w-1/2 mb-2" alt="Havilah Pro" srcset="">
             <div class="leading-relaxed font-light text-sm text-justify">
               <p class="mb-4">Leading Fruits and Vegetable exporter in Nairobi, Kenya</p>
               <p class="py-1">P.O Box 3516-00100 Nairobi, Kenya.</p>
