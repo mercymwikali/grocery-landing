@@ -1,11 +1,58 @@
+<script setup>
+const { isMobile, isDesktop, $device } = useDevice()
+  const products = ref([
+    {
+      name: 'Fine Beans',
+      description: 'Savor the delicate, yet distinct flavor of our fine beans. Freshly plucked and meticulously checked for quality, these slender and tender beans hold a crisp texture and a vibrant green hue. They make a versatile addition to any dish, bringing a pop of color and a dash of wholesome nutrients. Whether you choose to steam them, sauté, or enjoy them in a salad, our fine beans are guaranteed to elevate your culinary experience.',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841956/fine-beans_mvjryp.png',
+    },
+    {
+      name: 'Snow Peas',
+      description: 'Fresh, green, and bursting with a sweet earthy flavor, our peas are a vibrant addition to any plate. Handpicked for their plumpness and bright color, these peas serve as a testament to the rich, fertile soils from which they are harvested. A great source of vitamins and minerals, they are as nutritious as they are delicious',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/snow-peas_xd6hvv.png'
+    },
+    {
+      name: 'Sugar Snap Peas',
+      description: 'Experience the sweet crunch of our freshly harvested sugar snap peas. Perfectly plump with bright green pods, these peas are known for their delightful sweet flavor and crisp texture. Enjoy them raw, lightly steamed, or stir-fried for a nutritious addition to your meals. Their edible pods are not only tasty but also packed with a bounty of vitamins and fiber, making our sugar snap peas a delicious and healthy choice.',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/snow-peas_xd6hvv.png',
+    },
+    {
+      name: 'Baby Corn',
+      description: 'Our baby corn is a testament to our commitment to quality and freshness. Picked young and tender, these petite ears are a versatile ingredient beloved in numerous cuisines around the world. Enjoy their delicate sweetness and satisfying crunch in stir-fries, salads, or as a nutritious snack.',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841953/baby-corn_jtinnm.png'
+    },
+    {
+      name: 'Avocado',
+      description: 'Enjoy the creamy goodness of our rich and buttery avocados, a true superfood. We harvest our avocados at the optimal moment to ensure their smooth texture and subtly nutty flavor. Perfect in salads, on toast, or as guacamole, our avocados are a deliciously wholesome choice for your table.',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841949/avocado-new_swya7u.png',
+    },
+    {
+      name: 'Mangoes',
+      description: 'Delve into a world of tropical delight with our sun-kissed mangoes, harvested at the perfect moment of ripeness to ensure a succulent and sweet experience. Each mango promises a refreshing taste that captures the essence of warm, sunny climates, a joy to eat on their own or used in a variety of culinary creations.', 
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/mangoes_jtl39w.png'
+    },
+    {
+      name: 'Broccoli',
+      description: 'We take pride in our firm, deep green broccoli, harvested at the peak of freshness to ensure its unique flavor and nutritional value. The florets are tightly packed and abundant, signifying their top-grade quality. Each stalk of our broccoli is a powerhouse of nutrients, ready to make your meals healthier and tastier.', 
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841951/broccoli_qgyxu5.png',
+    },
+    {
+      name: 'Baby Carrots',
+      description: 'Crunch into health with our sweet and tender baby carrots. These brightly colored delights are harvested young, preserving their natural sweetness and making them a favorite among kids and adults alike. Snack on them raw, toss them in salads, or roast them for a healthy and tasty treat.',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841951/baby-carrot_llwlqr.png'
+    }
+]);
+  console.log('are we on desktop', isDesktop);  
+
+</script>
 <template>
-  <section>
+  <section class="overflow-hidden bg-gradient-to-r from-lime-950 to-lime-700">
     <nav class="flex absolute p-6 md:px-16 top-0 z-10 items-center justify-items-stretch text-white cursor-pointer">
         <!-- <NuxtLink to="/" class="text-3xl font-semibold pr-40"><span class=" text-orange-600 ">H</span>AVILAH</NuxtLink> -->
         <NuxtLink to="/">
-          <img src="~/assets/img/logo.png" class="w-1/2 filter sepia" />
+          <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841952/logo_fwck24.png" class="w-1/2 filter sepia" />
         </NuxtLink>
-        <ul class="hidden w-full md:flex md:gap-8  hover:border-collapse ">
+        <ul class="hidden w-full md:flex md:gap-8  hover:border-collapse" v-if="!isMobile">
           <li class="text-sm hover:text-orange-500 duration-200">
             <NuxtLink to="/" class=" px-2">Home</NuxtLink>
           </li>
@@ -27,47 +74,67 @@
             </a>
           </li>
         </ul>
-      </nav>
-    <div class="flex items-center w-full p-4 md:px-16 bg-gradient-to-r from-lime-950 to-lime-700 h-screen relative">
+    </nav>
+    <div class="flex items-center w-full p-4 md:px-16 h-screen relative">
       <!--Hero section-->
-      <div class=" flex flex-col md:flex-row items-center justify-items-center">
-        <div class="md:w-1/2 font-semibold py-20">
-          <p class=" text-sm px-2 font-normal text-orange-600">WE ARE A DELICACY</p>
-          <h1 class="text-5xl md:text-6xl font-bold text-white leading-[4.5rem]">
-            <span>Organically Grown,</span>
-            <span class=" text-orange-600">Freshly</span> <span class="">Delivered.</span>
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="w-full md:w-1/2 font-semibold z-10">
+          <h1 class="md:text-[4.25rem] md:leading-[4.5rem] text-[2.25rem] font-bold text-white leading-[2.5rem]">
+            Leading <span class="text-orange-600">Exporter</span>,
+            Fruits and Vegeta<span class="text-orange-600">bles</span>
           </h1>
-          <div class=" font-normal text-white text-[15px] py-5">
+          <div class=" font-normal flex flex-col gap-4 text-white py-5">
             <p class=" font-light leading-normal">
-              We are dedicated to promoting healthy living worldwide through our export of fresh, nutrient-rich fruits and vegetables. We source our produce from trusted farms that use sustainable farming methods. Allow us to be your gateway to a healthier lifestyle, no matter where you are in the world.
+              With a commitment to quality, reliability, and customer satisfaction, we have established ourselves as a trusted source for premium agricultural products.
+            </p>
+            <p>
+              We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
             </p>
           </div>
-          <a class="inline-block btn text-center my-4" href="https://wa.me/254723542737?text=Thank%20you%20for%20contacting%20us.%20We are your number one exporter of fine beans, sugar snap, snow peas and Avocado. Feel free to leave a message, a representative will reach out to you shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
+          <div class="flex md:gap-2 items-center my-4" :class="{'flex-col gap-10': isMobile}">
+            <a class="flex-1 btn text-center" href="https://wa.me/254723542737?text=Thank%20you%20for%20contacting%20us.%20We are your number one exporter of fine beans, sugar snap, snow peas and Avocado. Feel free to leave a message, a representative will reach out to you shortly." target="_blank" rel="noopener noreferrer">Order Now</a>
+            <a class="flex-1 px-20 py-4 text-orange-600 underline underline-offset-4" href="#who-we-are">Who We Are</a>
+          </div>
         </div>
-        <div class="hidden md:block md:w-1/2 pt-10">
-          <img src="~/assets/img/avocado.png" alt="Avocado" srcset="" class="w-full h-full">
+        <div class="md:block md:w-1/2 pt-10" :class="{'absolute top-40 right-2 w-[400px] opacity-50': isMobile}">
+          <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841725/hero-image_lepcyi.png" alt="Avocado" srcset="" class="w-full h-full">
         </div>
       </div>
     </div>
-    <!--browse our products-->
-    <div id="who-we-are" class="h-screen flex items-center">
-      <div class="p-4 md:px-16">
-        <div class="flex flex-col md:flex-row md:items-center">
-          <img src="~/assets/img/mango_bg.png" class="w-1/2" alt="Ripe mangoes" srcset="">
-          <div class="company-descripton">
-            <h1 class="text-4xl md:text-6xl font-bold py-6">Who we are</h1>
+
+    <!--Who we are-->
+    <div id="who-we-are" class="min-h-screen md:h-screen flex items-center py-10 text-gray-200 md:px-[4rem]">
+     <div class="w-full p-4 md:w-4/5">
+      <h1 class="text-[54px] md:my-10 md:text-[128px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">Who We Are</h1>
+        <div class="md:border md:border-gray-500 relative md:p-[4rem]">
+          <div class="company-descripton w-full md:w-3/4">
             <p class="inline-block my-4">
-            We are an international exporter of premium-quality fruits and vegetables, committed to nourishing the world with the best of nature's bounty. Founded on the principles of health, freshness, and sustainability, we serve as a vital link between farmers' fields and global tables.
-              </p>
-              <p>
-                But we're not just about delivering produce; we're about building relationships and fostering a global community. We work closely with farmers, supporting sustainable farming practices and fair trade. We believe in the power of fresh produce to connect people, and we're driven to make that connection possible, one fruit and one vegetable at a time.
-              </p>
-              <a href="#best-products" class="inline-block text-center text-orange-500 w-full md:w-1/2 my-8 px-20 py-4 border border-orange-500">View Our Catalog</a>
+              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. As farmers,We cultivate and grow a variety of high-quality produce, ensuring that it meets international standards and regulations for export.Our company plays a vital role in connecting farmers like Ourselves with buyers from around the world, enabling the global distribution of fresh fruits and vegetables and promoting the agricultural industry in Kenya.
+            </p>
+            <p>With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. Our team is well-versed in export regulations, documentation, and shipping procedures, enabling us to handle the complexities of international trade seamlessly. Whether you're a retailer, distributor, or food service provider, we are equipped to meet your specific requirements and deliver on time.</p>
+          </div>
+          <a href="#best-products" :class="{'my-10': isMobile}" class="w-full md:w-1/3 inline-block md:absolute md:top-[50%] md:-right-40 text-center text-orange-500 px-20 py-4 border border-orange-500">View Our Catalog</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products py-10 min-h-screen md:px-[4rem]" id="best-products">
+      <div class="p-4">
+        <h1 class="text-[54px] md:my-10 md:text-[128px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">Top Products</h1>
+        <div class="w-full md:w-3/4 products-list grid gap-10 md:grid-cols-3 text-gray-200">
+          <div :class="{'border border-orange-600': index % 2 == 0}" class="hover:shadow-xl transition-shadow cursor-pointer product-item border text-center border-gray-500 p-4" v-for="(product, index) of products">
+            <img class="h-40 inline-block text-center" :src="product.image" :alt="product.name" srcset="">
+            <div class="content text-left">
+              <h3 class="font-semibold text-xl my-2">{{ product.name }}</h3>
+              <p class="text-sm">{{ product.description }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="best-products" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
+
+    <div id="best-products-d" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
       <div>
         <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
         </h1>
@@ -121,7 +188,7 @@
       <footer class="bg-gradient-to-r from-orange-700 to-orange-600 text-white p-6 md:px-16">
         <div class="text-sm flex flex-col md:flex-row md:gap-48">
           <div class="w-full md:w-1/4 inline-block">
-            <img src="~/assets/img/logo.png" class="w-1/2 mb-2" alt="Havilah Pro" srcset="">
+            <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841952/logo_fwck24.png" class="w-1/2 mb-2" alt="Havilah Pro" srcset="">
             <div class="leading-relaxed font-light text-sm text-justify">
               <p class="mb-4">Leading Fruits and Vegetable exporter in Nairobi, Kenya</p>
               <p class="py-1">P.O Box 3516-00100 Nairobi, Kenya.</p>
@@ -160,9 +227,5 @@
     </div>
   </section>
 </template>
-<script setup>
-
-
-</script>
 
 <style  scoped></style>
