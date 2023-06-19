@@ -93,10 +93,10 @@ const testimonials = ref([
             Fruits and Vegeta<span class="text-orange-600">bles</span>
           </h1>
           <div class=" font-normal flex flex-col gap-4 text-white py-5">
-            <p class=" font-light leading-normal">
+            <p class=" font-light leading-normal text-sm">
               We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
             </p>
-            <p>
+            <p class="text-sm">
               We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
             </p>
           </div>
@@ -144,7 +144,7 @@ const testimonials = ref([
     </div>
 
     <!--About us-->
-    <div class="py-10 min-h-screen md:px-[4rem]">
+    <div class="py-10 min-h-screen px-4 md:px-[4rem]">
       <h1 class="text-[54px] md:text-[72px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">What our customers say</h1>
       <div class="w-full font-semibold md:w-3/4 my-10">
         <p class="text-white font-light leading-normal">Discover why customers love us! Enjoy the
@@ -154,7 +154,7 @@ const testimonials = ref([
           We know that customer opinions can vary,Thats why we collect and analyze feedback directly from our own customers to understand better their specific experiences and sentiments towards our company.
         </p>
       </div>
-      <div class="w-full md:w-4/5 my-4 grid grid-cols-3 gap-8 overflow-x-auto text-gray-200">
+      <div class="w-full md:w-4/5 my-4 grid md:grid-cols-3 gap-8 overflow-x-auto text-gray-200">
         <div class="rounded-xl border text-sm border-lime-900 p-4 bg-lime-900" v-for="testimonial of testimonials">
           <h4 class="my-2 text-gray-100 font-semibold">{{ testimonial.heading }}</h4>
           <p class="description">
