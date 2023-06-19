@@ -134,41 +134,6 @@ const { isMobile, isDesktop, $device } = useDevice()
       </div>
     </div>
 
-    <div id="best-products-d" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
-      <div>
-        <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
-        </h1>
-      </div>
-      <div class=" flex shrink-0 flex-col md:flex-row p-5 gap-7 ">
-        <div class=" block rounded overflow-hidden shadow-slate-100 ">
-          <img src="~/assets/img/peas.jpeg" class=" md:static">
-          <div class=" text-sm text-start font-light  items-center bg-slate-50 p-5">
-            <p class=" flex py-2 tfont"><span class=" text-orange-600 font-semibold  pr-2">Title:</span> Peas Straight
-              from the Farm</p>
-            <p class=" block"><span class="text-orange-600 font-medium ">Descprtion:</span> Fresh, flavorful peas
-              delivered straight to you.</p>
-          </div>
-        </div>
-        <div class=" block rounded overflow-hiddenshadow-slate-100">
-          <img src="~/assets/img/fruits.jpg" class="  md:static">
-          <div class=" text-sm text-start font-light items-center bg-slate-50 p-5">
-            <p class=" flex py-2 text-sm"><span class=" text-orange-600 font-semibold pr-2 ">Title:</span>Juicy and
-              Nutrient-Packed Fruits</p>
-            <p class=" block"><span class="text-orange-600 font-medium ">Descprtion:</span> Juicy, nutrient-packed
-              fruits for a healthy lifestyle.</p>
-          </div>
-        </div>
-        <div class=" inline-block  rounded overflow-hidden shadow-slate-100">
-          <img src="~/assets/img/news_french_beans-610x406.jpg" class=" md:static">
-          <div class=" text-sm text-start font-light items-center bg-slate-50 p-5">
-            <p class=" flex py-2"><span class=" text-orange-600 font-semibold pr-2">Title:</span>Farm-to-Table French
-              Beans</p>
-            <p class=" block "><span class="text-orange-600 font-medium ">Descprtion:</span> Crisp, tender French beans
-              for delightful meals.</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--About us-->
     <div class="  flex flex-col md:flex-row p-10 bg-gradient-to-r from-lime-900 to-lime-700">
       <div class=" w-full md:w-1/2 font-semibold mt-20">
