@@ -42,7 +42,16 @@ const { isMobile, isDesktop, $device } = useDevice()
       image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841951/baby-carrot_llwlqr.png'
     }
 ]);
-  console.log('are we on desktop', isDesktop);  
+console.log('are we on desktop', isDesktop); 
+
+const testimonials = ref([
+  { heading: 'High-Quality Products', description: 'We consistently provide fresh, flavorful, and visually appealing fruits and vegetables. Meeting quality standards and ensuring product freshness...' },
+  { heading: 'Reliable and Timely deliveries', description: 'We have a track record of delivering products on time and in good condition. To us timely shipments are crucial to maintaining the freshness and quality of the produce...' },
+  { heading: 'Competitive Pricing', description: 'Who offer competitive prices without compromising on product...' },
+  { heading: 'Good Communication', description: 'Effective and transparent communication is our key role throughout the export process Prompt responses to inquiries, updates on order status, and clear channels of communication are important to us...' },
+  { heading: 'Flexibility and Customization', description: 'We are willing to cater to customers specific requirements, such as packaging, labeling, and product assortment. We Offer flexibility and customization options to enhance customer satisfaction...'},
+  { heading: 'Strong Supply Chain Management', description: 'We are efficient in management of the supply chain, which includes sourcing from reliable farmers, proper storage, handling, and logistics, its very crucial to us to ensure the availability and quality of products...'}
+])
 
 </script>
 <template>
@@ -85,7 +94,7 @@ const { isMobile, isDesktop, $device } = useDevice()
           </h1>
           <div class=" font-normal flex flex-col gap-4 text-white py-5">
             <p class=" font-light leading-normal">
-              With a commitment to quality, reliability, and customer satisfaction, we have established ourselves as a trusted source for premium agricultural products.
+              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
             </p>
             <p>
               We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
@@ -109,7 +118,7 @@ const { isMobile, isDesktop, $device } = useDevice()
         <div class="md:border md:border-gray-500 relative md:p-[4rem]">
           <div class="company-descripton w-full md:w-3/4">
             <p class="inline-block my-4">
-              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. As farmers,We cultivate and grow a variety of high-quality produce, ensuring that it meets international standards and regulations for export.Our company plays a vital role in connecting farmers like Ourselves with buyers from around the world, enabling the global distribution of fresh fruits and vegetables and promoting the agricultural industry in Kenya.
+              Havilah pro limited is a leading export company specializing in the distribution of fresh produce fruits and vegetables to international markets. With a commitment to quality, reliability, and customer satisfaction, we have established ourselves as a trusted source for premium agricultural products. 
             </p>
             <p>With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. Our team is well-versed in export regulations, documentation, and shipping procedures, enabling us to handle the complexities of international trade seamlessly. Whether you're a retailer, distributor, or food service provider, we are equipped to meet your specific requirements and deliver on time.</p>
           </div>
@@ -134,52 +143,23 @@ const { isMobile, isDesktop, $device } = useDevice()
       </div>
     </div>
 
-    <div id="best-products-d" class=" w-auto bg-white mt-4  p-10 rounded- shadow-inherit ">
-      <div>
-        <h1 class=" font-bold text-3xl text-black">Browse our Best Selling <span class=" text-orange-600">Products</span>
-        </h1>
-      </div>
-      <div class=" flex shrink-0 flex-col md:flex-row p-5 gap-7 ">
-        <div class=" block rounded overflow-hidden shadow-slate-100 ">
-          <img src="~/assets/img/peas.jpeg" class=" md:static">
-          <div class=" text-sm text-start font-light  items-center bg-slate-50 p-5">
-            <p class=" flex py-2 tfont"><span class=" text-orange-600 font-semibold  pr-2">Title:</span> Peas Straight
-              from the Farm</p>
-            <p class=" block"><span class="text-orange-600 font-medium ">Descprtion:</span> Fresh, flavorful peas
-              delivered straight to you.</p>
-          </div>
-        </div>
-        <div class=" block rounded overflow-hiddenshadow-slate-100">
-          <img src="~/assets/img/fruits.jpg" class="  md:static">
-          <div class=" text-sm text-start font-light items-center bg-slate-50 p-5">
-            <p class=" flex py-2 text-sm"><span class=" text-orange-600 font-semibold pr-2 ">Title:</span>Juicy and
-              Nutrient-Packed Fruits</p>
-            <p class=" block"><span class="text-orange-600 font-medium ">Descprtion:</span> Juicy, nutrient-packed
-              fruits for a healthy lifestyle.</p>
-          </div>
-        </div>
-        <div class=" inline-block  rounded overflow-hidden shadow-slate-100">
-          <img src="~/assets/img/news_french_beans-610x406.jpg" class=" md:static">
-          <div class=" text-sm text-start font-light items-center bg-slate-50 p-5">
-            <p class=" flex py-2"><span class=" text-orange-600 font-semibold pr-2">Title:</span>Farm-to-Table French
-              Beans</p>
-            <p class=" block "><span class="text-orange-600 font-medium ">Descprtion:</span> Crisp, tender French beans
-              for delightful meals.</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--About us-->
-    <div class="  flex flex-col md:flex-row p-10 bg-gradient-to-r from-lime-900 to-lime-700">
-      <div class=" w-full md:w-1/2 font-semibold mt-20">
-        <h2 class=" text-white font-bold text-5xl">Why Customers<span class="  text-orange-600"> Love</span> Us.</h2>
-        <p class=" text-sm text-white font-light leading-normal my-4 ">Discover why customers love us! Enjoy the
+    <div class="py-10 min-h-screen md:px-[4rem]">
+      <h1 class="text-[54px] md:text-[72px] font-black text-gray-400 opacity-20" style="-webkit-text-stroke: 2px #ececec">What our customers say</h1>
+      <div class="w-full font-semibold md:w-3/4 my-10">
+        <p class="text-white font-light leading-normal">Discover why customers love us! Enjoy the
           freshest, locally sourced produce delivered to your doorstep. Choose from a wide variety of organic options. Shop online and taste
           the truly farm-fresh difference today!</p>
+        <p class="text-white font-light leading-normal my-3">
+          We know that customer opinions can vary,Thats why we collect and analyze feedback directly from our own customers to understand better their specific experiences and sentiments towards our company.
+        </p>
       </div>
-      <div class=" relative block my-4">
-        <div class=" w-full md:w-[550px] rounded-md overflow-hidden">
-          <img src="~/assets/img/choosing_pic.jpeg" alt="why choose use" class=" static">
+      <div class="w-full md:w-4/5 my-4 grid grid-cols-3 gap-8 overflow-x-auto text-gray-200">
+        <div class="rounded-xl border text-sm border-lime-900 p-4 bg-lime-900" v-for="testimonial of testimonials">
+          <h4 class="my-2 text-gray-100 font-semibold">{{ testimonial.heading }}</h4>
+          <p class="description">
+            {{  testimonial.description }}
+          </p>
         </div>
       </div>
     </div>
