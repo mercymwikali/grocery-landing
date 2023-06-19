@@ -85,7 +85,7 @@ const { isMobile, isDesktop, $device } = useDevice()
           </h1>
           <div class=" font-normal flex flex-col gap-4 text-white py-5">
             <p class=" font-light leading-normal">
-              With a commitment to quality, reliability, and customer satisfaction, we have established ourselves as a trusted source for premium agricultural products.
+              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
             </p>
             <p>
               We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
