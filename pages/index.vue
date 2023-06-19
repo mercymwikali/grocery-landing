@@ -109,7 +109,7 @@ const { isMobile, isDesktop, $device } = useDevice()
         <div class="md:border md:border-gray-500 relative md:p-[4rem]">
           <div class="company-descripton w-full md:w-3/4">
             <p class="inline-block my-4">
-              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. As farmers,We cultivate and grow a variety of high-quality produce, ensuring that it meets international standards and regulations for export.Our company plays a vital role in connecting farmers like Ourselves with buyers from around the world, enabling the global distribution of fresh fruits and vegetables and promoting the agricultural industry in Kenya.
+              Havilah pro limited is a leading export company specializing in the distribution of fresh produce fruits and vegetables to international markets. With a commitment to quality, reliability, and customer satisfaction, we have established ourselves as a trusted source for premium agricultural products. 
             </p>
             <p>With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. Our team is well-versed in export regulations, documentation, and shipping procedures, enabling us to handle the complexities of international trade seamlessly. Whether you're a retailer, distributor, or food service provider, we are equipped to meet your specific requirements and deliver on time.</p>
           </div>
