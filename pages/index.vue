@@ -166,7 +166,7 @@ const testimonials = ref([
     <!--Contact us-->
     <div class="w-full">
       <footer class="bg-gradient-to-r from-orange-700 to-orange-600 text-white p-6 md:px-16">
-        <div class="text-sm flex flex-col md:gap-48">
+        <div class="text-sm flex flex-col md:gap-10">
           <div class="">
             <h5 class="text-3xl my-4">Our Certifications</h5>
             <p class="w-full md:w-1/2">
