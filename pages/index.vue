@@ -166,7 +166,18 @@ const testimonials = ref([
     <!--Contact us-->
     <div class="w-full">
       <footer class="bg-gradient-to-r from-orange-700 to-orange-600 text-white p-6 md:px-16">
-        <div class="text-sm flex flex-col md:flex-row md:gap-48">
+        <div class="text-sm flex flex-col md:gap-48">
+          <div class="">
+            <h5 class="text-3xl my-4">Our Certifications</h5>
+            <p class="w-full md:w-1/2">
+              We are certified with Global GAP, Grasp Social Standard, licensed to export by the Horticultural Crops Directorate of Kenya (HCD) and the Kenya Plant Health Inspectorate Service (KEPHIS).
+            </p>
+            <div class="licenses flex flex-col md:flex-row items-center my-8 gap-6">
+              <img src="@/assets/img/global-gap-logo.png" class="w-1/2 md:w-1/3" alt="GLOBAL GAP" srcset="">
+              <img src="@/assets/img/kephis-logo.png" class="w-1/2 md:w-1/3" alt="KEPHIS">
+              <img src="@/assets/img/afa-logo.png" class="w-1/2 md:w-1/3" alt="AFA" srcset="">
+            </div>
+          </div>
           <div class="w-full md:w-1/4 inline-block">
             <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841952/logo_fwck24.png" class="w-1/2 mb-2" alt="Havilah Pro" srcset="">
             <div class="leading-relaxed font-light text-sm text-justify">
