@@ -94,7 +94,7 @@ const testimonials = ref([
           </h1>
           <div class=" font-normal flex flex-col gap-4 text-white py-5">
             <p class=" font-light leading-normal text-sm">
-              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
+              We are fresh produce exporters based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
             </p>
             <p class="text-sm">
               We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
@@ -166,7 +166,18 @@ const testimonials = ref([
     <!--Contact us-->
     <div class="w-full">
       <footer class="bg-gradient-to-r from-orange-700 to-orange-600 text-white p-6 md:px-16">
-        <div class="text-sm flex flex-col md:flex-row md:gap-48">
+        <div class="text-sm flex flex-col md:gap-10">
+          <div class="">
+            <h5 class="text-3xl my-4">Our Certifications</h5>
+            <p class="w-full md:w-1/2">
+              We are certified with Global GAP, Grasp Social Standard, licensed to export by the Horticultural Crops Directorate of Kenya (HCD) and the Kenya Plant Health Inspectorate Service (KEPHIS).
+            </p>
+            <div class="licenses flex flex-col md:flex-row items-center my-8 gap-6">
+              <img src="@/assets/img/global-gap-logo.png" class="w-1/2 md:w-1/3" alt="GLOBAL GAP" srcset="">
+              <img src="@/assets/img/kephis-logo.png" class="w-1/2 md:w-1/3" alt="KEPHIS">
+              <img src="@/assets/img/afa-logo.png" class="w-1/2 md:w-1/3" alt="AFA" srcset="">
+            </div>
+          </div>
           <div class="w-full md:w-1/4 inline-block">
             <img src="https://res.cloudinary.com/dzarpc5my/image/upload/v1686841952/logo_fwck24.png" class="w-1/2 mb-2" alt="Havilah Pro" srcset="">
             <div class="leading-relaxed font-light text-sm text-justify">
@@ -176,31 +187,6 @@ const testimonials = ref([
               <p class="py-1">Email: havilahprolimited@gmail.com</p>
               <p class="py-1">Copyright &copy;  {{ new Date(Date.now()).getFullYear() }}</p>
             </div>
-          </div>
-          <div class=" inline-block cursor-pointer py-5 md:py-0">
-            <h3 class="my-4 font-semibold text-lg">Our Social Media</h3>
-            <p>Our Customer Service is ready to help your at any time.</p>
-            <NuxtLink to="/" class=" flex items-center font-light gap-2 py-2">
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5"><path d="M 4.773438 1 C 2.695313 1 1 2.695313 1 4.773438 L 1 10.230469 C 1 12.304688 2.695313 14 4.773438 14 L 10.230469 14 C 12.304688 14 14 12.304688 14 10.226563 L 14 4.773438 C 14 2.695313 12.304688 1 10.226563 1 Z M 4.773438 2 L 10.226563 2 C 11.765625 2 13 3.234375 13 4.773438 L 13 10.226563 C 13 11.765625 11.765625 13 10.230469 13 L 4.773438 13 C 3.234375 13 2 11.765625 2 10.230469 L 2 4.773438 C 2 3.234375 3.234375 2 4.773438 2 Z M 11.5 3 C 11.222656 3 11 3.222656 11 3.5 C 11 3.777344 11.222656 4 11.5 4 C 11.777344 4 12 3.777344 12 3.5 C 12 3.222656 11.777344 3 11.5 3 Z M 7.5 4 C 5.574219 4 4 5.574219 4 7.5 C 4 9.425781 5.574219 11 7.5 11 C 9.425781 11 11 9.425781 11 7.5 C 11 5.574219 9.425781 4 7.5 4 Z M 7.5 5 C 8.886719 5 10 6.113281 10 7.5 C 10 8.886719 8.886719 10 7.5 10 C 6.113281 10 5 8.886719 5 7.5 C 5 6.113281 6.113281 5 7.5 5 Z"/></svg>
-              Instagram
-            </NuxtLink>
-            <NuxtLink to="/" class=" flex items-center font-light gap-2 py-2">
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5"><path d="M 7.5 1 C 3.914063 1 1 3.914063 1 7.5 C 1 8.796875 1.417969 9.984375 2.070313 11 L 0.953125 14.121094 L 4.429688 13.140625 C 5.351563 13.644531 6.375 14 7.5 14 C 11.085938 14 14 11.085938 14 7.5 C 14 3.914063 11.085938 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 6.457031 13 5.492188 12.707031 4.65625 12.203125 L 4.472656 12.089844 L 2.546875 12.628906 L 3.171875 10.894531 L 3.019531 10.683594 C 2.378906 9.78125 2 8.6875 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 5.0625 4 C 4.949219 4 4.761719 4.046875 4.601563 4.234375 C 4.445313 4.417969 4 4.867188 4 5.78125 C 4 6.691406 4.617188 7.574219 4.703125 7.699219 C 4.789063 7.824219 5.917969 9.695313 7.644531 10.5 C 8.054688 10.691406 8.375 10.804688 8.625 10.890625 C 9.039063 11.03125 9.414063 11.011719 9.710938 10.964844 C 10.042969 10.910156 10.730469 10.515625 10.875 10.082031 C 11.015625 9.648438 11.019531 9.277344 10.972656 9.199219 C 10.933594 9.121094 10.816406 9.074219 10.644531 8.984375 C 10.472656 8.890625 9.625 8.441406 9.46875 8.382813 C 9.3125 8.316406 9.195313 8.289063 9.078125 8.472656 C 8.964844 8.660156 8.636719 9.078125 8.535156 9.199219 C 8.433594 9.324219 8.335938 9.339844 8.164063 9.246094 C 7.988281 9.152344 7.433594 8.957031 6.777344 8.324219 C 6.265625 7.832031 5.917969 7.226563 5.820313 7.039063 C 5.71875 6.851563 5.808594 6.753906 5.894531 6.664063 C 5.972656 6.578125 6.066406 6.445313 6.152344 6.335938 C 6.238281 6.230469 6.265625 6.148438 6.324219 6.027344 C 6.382813 5.902344 6.355469 5.792969 6.3125 5.703125 C 6.265625 5.609375 5.921875 4.695313 5.78125 4.324219 C 5.640625 3.964844 5.496094 4.011719 5.390625 4.007813 C 5.292969 4 5.175781 4 5.0625 4 Z"/></svg>
-                Message Us</NuxtLink>
-            <NuxtLink to="/" class=" flex items-center font-light gap-2 py-2">
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" fill="currentColor" class="w-5 h-5"><path d="M 7.5 1 C 3.9160714 1 1 3.9160714 1 7.5 C 1 11.083929 3.9160714 14 7.5 14 C 11.083929 14 14 11.083929 14 7.5 C 14 3.9160714 11.083929 1 7.5 1 z M 7.5 2 C 10.543488 2 13 4.4565116 13 7.5 C 13 10.266333 10.967571 12.541024 8.3125 12.933594 L 8.3125 9.0898438 L 9.8652344 9.0898438 L 10.109375 7.5136719 L 8.3125 7.5136719 L 8.3125 6.6503906 C 8.3125 5.9953906 8.5256719 5.4140625 9.1386719 5.4140625 L 10.123047 5.4140625 L 10.123047 4.0371094 C 9.9500469 4.0141094 9.5845781 3.9628906 8.8925781 3.9628906 C 7.4485781 3.9628906 6.6015625 4.7258906 6.6015625 6.4628906 L 6.6015625 7.5117188 L 5.1171875 7.5117188 L 5.1171875 9.0898438 L 6.6035156 9.0898438 L 6.6035156 12.919922 C 3.9897868 12.492118 2 10.237066 2 7.5 C 2 4.4565116 4.4565116 2 7.5 2 z"/></svg>
-              Facebook
-            </NuxtLink>
-            <p class=" flex text-center gap-2 py-2 font-light">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Monday-Friday : 8am to 8pm</p>
-            <p class=" flex text-center gap-2 py-2 font-light">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Saturday : 8am to 8pm</p>
           </div> 
         </div>
       </footer>
