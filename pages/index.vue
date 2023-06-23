@@ -94,7 +94,7 @@ const testimonials = ref([
           </h1>
           <div class=" font-normal flex flex-col gap-4 text-white py-5">
             <p class=" font-light leading-normal text-sm">
-              We are fresh produce farmers based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
+              We are fresh produce exporters based in Nairobi, Kenya. Our company specializes in exporting a wide range of fresh fruits and vegetables to international markets. With a well-established logistics infrastructure, we have the capability to efficiently deliver our products to customers worldwide. 
             </p>
             <p class="text-sm">
               We offer a diverse array of fruits and vegetables Each product is carefully inspected, handpicked, and packaged to meet the highest standards
