@@ -183,7 +183,7 @@ const testimonials = ref([
             <div class="leading-relaxed font-light text-sm text-justify">
               <p class="mb-4">Leading Fruits and Vegetable exporter in Nairobi, Kenya</p>
               <p class="py-1">P.O Box 3516-00100 Nairobi, Kenya.</p>
-              <p class="py-1">Tel: (+254) 723 542 737</p>
+              <p class="py-1">Tel: (+254) 723 542 737 &nbsp; (+254) 748 961 296</p>
               <p class="py-1">Email: havilahprolimited@gmail.com</p>
               <p class="py-1">Copyright &copy;  {{ new Date(Date.now()).getFullYear() }}</p>
             </div>
