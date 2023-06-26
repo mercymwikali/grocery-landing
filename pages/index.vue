@@ -14,7 +14,7 @@ const { isMobile, isDesktop, $device } = useDevice()
     {
       name: 'Sugar Snap Peas',
       description: 'Experience the sweet crunch of our freshly harvested sugar snap peas. Perfectly plump with bright green pods, these peas are known for their delightful sweet flavor and crisp texture. Enjoy them raw, lightly steamed, or stir-fried for a nutritious addition to your meals. Their edible pods are not only tasty but also packed with a bounty of vitamins and fiber, making our sugar snap peas a delicious and healthy choice.',
-      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1686841954/snow-peas_xd6hvv.png',
+      image: 'https://res.cloudinary.com/dzarpc5my/image/upload/v1687786035/sugar-snap_j1wxxe.png',
     },
     {
       name: 'Baby Corn',
